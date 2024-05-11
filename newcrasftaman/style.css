@@ -16,11 +16,12 @@
   }
 
   .box {
-    width: 1177px;
-    height: 456px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 80px;
     gap: 20px;
   }
@@ -80,6 +81,9 @@
 
   .info-container {
     width: 1177px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     opacity: 0px;
     padding-top: 50px;
 
@@ -87,8 +91,8 @@
 
   .navigator {
     display: flex;
-    width: 1177px;
-    height: 56px;
+    width: 100%;
+    height: 100%;
     gap: 0px;
     opacity: 0px;
   }
@@ -134,11 +138,12 @@
   }
 
   .info-box {
-    width: 1177px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     padding-top: 25px;
     display: flex;
     gap: 25px;
+    justify-content: center;
   }
 
 
@@ -247,6 +252,14 @@
     padding-left: 20px;
   }
 
+  .info-service-text-second {
+    width: 191px;
+    height: 120px;
+    gap: 10px;
+    opacity: 0px;
+    padding-right: 20px;
+  }
+
   .info-service-main-text {
     width: 267px;
     height: 18px;
@@ -282,8 +295,25 @@
       background-color: rgba(219, 219, 219, 0.232);
     }
 
+    .header-text {
+      padding-left: 30px;
+    }
+
     .sub-text {
-      padding: 0px 20px;
+      padding-left: 45px;
+    }
+
+    .header-text-sub {
+      padding-right: 40px;
+    }
+
+    .navigator {
+      width: 100%;
+      height: 100%;
+    }
+
+    .nav-div-main p {
+      padding-left: 30px;
     }
   }
 
