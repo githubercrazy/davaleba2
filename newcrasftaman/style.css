@@ -1,6 +1,3 @@
-  body {
-    overflow-x: hidden;
-  }
 
   body,
   html {
@@ -33,7 +30,8 @@
   }
 
   .header-text-container {
-    width: 1177px;
+    max-width: 1177;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,8 +56,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 150px;
-    height: ;
   }
 
   .subtext-header {
@@ -138,42 +134,36 @@
   }
 
   .info-box {
-    width: 100%;
-    height: 100%;
     padding-top: 25px;
     display: flex;
-    gap: 25px;
+    gap: 160px;
     justify-content: center;
   }
 
 
   .info-box-one,
   .info-box-two {
-    width: 576px;
-    height: 220px;
+
     gap: 0px;
     opacity: 0px;
   }
 
   .info-box-header {
-    width: 534px;
-    height: 40px;
+
     padding: 18px 22px 18px 22px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     background: linear-gradient(90.09deg, #FFFFFF 1%, rgba(245, 248, 252, 0.51) 99.92%);
   }
 
   .info-text-box {
-    width: 526px;
-    height: 40px;
+
     gap: 168px;
     opacity: 0px;
     display: flex;
   }
 
   .order-text {
-    width: 148px;
-    height: 40px;
+
     gap: 16px;
     opacity: 0px;
     display: flex;
@@ -193,9 +183,6 @@
   }
 
   .order-result {
-    width: 210px;
-    height: 40px;
-    gap: 16px;
     opacity: 0px;
   }
 
@@ -278,8 +265,68 @@
     color: rgba(62, 60, 60, 1);
   }
 
+  @media (min-width: 360px) {
 
-  @media (max-width: 1300px) {
+    .header-container {
+        width: 360px;
+        padding-right: 35px;
+      }
+    .header-text-container{
+      display: grid;
+    }
+      .header-container p {
+        font-size: 14px;
+      }
+    
+      .info-box {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+      }
+    
+      .info-box p {
+        font-size: 10px;
+      }
+    
+      .info-box-header,
+      .info-box-content {
+        width: 100%;
+        max-width: 370px;
+    
+      }
+    
+      .info-box-content {
+        height: 100%;
+      }
+    
+      .order-result {
+        padding-right: 100%;
+      }
+    
+      .info-box-text {
+        display: grid;
+        grid-template-rows: repeat(1, 4.5rem);
+    
+      }
+    
+      .info-service-text-second {
+        padding-left: 20px;
+      }
+    
+      .navigator {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        width: 100%;
+        max-width: 300px;
+        padding-right: 7rem;
+      }
+    
+      .nav-div,
+      .nav-div-main {
+        max-width: 300px;
+      }
+    }
+
+  /* @media (max-width: 1300px) {
     .info-box {
       display: grid;
       grid-template-rows: repeat(1, 1fr);
@@ -389,4 +436,4 @@
     }
 
 
-  }
+  } */
